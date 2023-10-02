@@ -1,0 +1,124 @@
+@import "base/reset.scss";
+@import "base/vars.scss";
+
+body {
+  font-family: $font-regular;
+}
+
+header {
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  img {
+    height: 100%;
+  }
+}
+
+h1 {
+  font-size: 78px;
+}
+
+main {
+  @include flex(center, center, column);
+  width: 100vw;
+  border-radius: 2rem;
+}
+
+.server-holder {
+  width: 100vw;
+}
+
+.server {
+  background-color: $background-color;
+  color: $text-color;
+  @include flex(center, space-evenly);
+  margin-top: $spacing;
+  padding: $spacing;
+  height: 10rem;
+  width: 100%;
+  border-radius: $border-radius;
+}
+
+h2 {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: $spacing;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a {
+  color: $text-color;
+  border-bottom: 1px solid $text-color;
+  transition: .25s ease-in-out;
+}
+
+a:hover {
+  color: #c3f1ff;
+}
+
+a:active {
+  color: $text-color;
+}
+
+
+// Style du bouton favoris
+.btn {
+  width: 5rem;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #7cfc87;
+  border-radius: $border-radius;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #28fd88;
+  color: black;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.btn .favorite {
+  background-color: #28fd88 !important;
+}
+
+footer {
+  text-align: center;
+  margin-top: $spacing;
+  padding: $spacing;
+  border-top: 1px solid black;
+}

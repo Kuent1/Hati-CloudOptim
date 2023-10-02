@@ -45,3 +45,9 @@ Instructions :
 - Votre projet doit être publique ou partagé avec l'utilisateur Github Gension
 
 GL HF ! 
+
+# DEBRIEF 
+
+Un peu retardé dès le début dû a un problème de chargement d'image, je me suis mis en retard d'une petite demie-heure le temps de trouver l'origine du problème.
+La suite a plutôt bien fonctionné, juste quelques difficultés de design... Mais uniquement parce que je ne suis pas designeur !
+Un peu pris de court sur la fin, quelques difficultés à réussir à faire fonctionner correctement le bouton favoris. Celui-ci affiche une alerte, mais je n'ai pas réussi à modifier le style de la page en fonction.

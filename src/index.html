@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloupOptim</title>
+</head>
+
+<body>
+    <!-- Entête -->
+    <header>
+        <img src="./images/cloudOptim.png" alt="Logo CloudOptim">
+        <h1>CloudOptim</h1>
+    </header>
+
+    <!-- Section principale -->
+    <main>
+        <div id="server-holder"></div>
+    </main>
+    <!-- Pied de page -->
+    <footer>
+        <p>Made with ♥️ by Kuentin for O'Clock</p>
+    </footer>
+
+    <!-- Template de serveur -->
+    <template id="server-template">
+        <section class="server">
+            <h2 class="server-title"></h2>
+            <div class="info">
+                <h3 class="status"></h3>
+                <h3 class="cpu"> CPU: 100% </h3>
+                <h3 class="memory"> Memoire: 14Go/32Go </h3>
+                <h3 class="dashboard"> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                        target="_blank">Dashboard</a></h3>
+            </div>
+
+            <button class="btn" class="favorite-btn">
+                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+                <span>Favoris</span>
+            </button>
+        </section>
+    </template>
+</body>
+
+</html>
